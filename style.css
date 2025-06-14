@@ -1,0 +1,123 @@
+/* style.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8f4ef;
+  color: #3e342f;
+}
+
+header {
+  background: linear-gradient(135deg, #e0cfc1, #f8f4ef);
+  color: #3e342f;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.2rem 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#about .about-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d9bfa6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex-grow: 1;
+}
+
+h2 {
+  color: #5a4436;
+  border-bottom: 2px solid #d9bfa6;
+  padding-bottom: 0.3rem;
+  margin: 2rem 0 1rem;
+}
+
+.skills-list,
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills-list span,
+.stack-item {
+  background: #eaddd0;
+  color: #3e342f;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.skills-list span:hover,
+.stack-item:hover {
+  transform: scale(1.05);
+  background: #d9bfa6;
+}
+
+#contact a {
+  margin-right: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #5a4436;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease;
+}
+
+#contact a:hover {
+  background-color: #3b2d24;
+}
+
+footer {
+  background-color: #e0cfc1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #3e342f;
+  margin-top: 3rem;
+  border-top: 1px solid #d9bfa6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 1rem;
+  }
+}
